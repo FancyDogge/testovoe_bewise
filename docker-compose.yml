@@ -6,9 +6,9 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./data/db:/var/lib/postgresql/data
+      - ./postgres:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=credit_service
+      - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_HOST=db
