@@ -6,8 +6,8 @@ from db.database import Base
 
 class Question(Base):
     __tablename__ = 'questions'
-
+    # mapped_column
     id = Column(Integer, primary_key=True, index=True)
-    question_text = Column(String)
-    answer_text = Column(String)
+    question = Column(String)
+    answer = Column(String)
     created_at = Column(DateTime, default=datetime.utcnow)
