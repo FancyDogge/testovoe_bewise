@@ -13,7 +13,7 @@ app = FastAPI()
 @app.post("/questions", response_model=List[QuestionResponse])
 def get_questions(request: QuestionRequest, db: Session = Depends(get_db)):
     questions_num = request.questions_num
-
+    
     # отдельно собираем вопросы
     saved_questions = retrieve_questions(questions_num)
     # фильтруем существующие вопросы

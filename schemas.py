@@ -6,7 +6,7 @@ class QuestionRequest(BaseModel):
     questions_num: int
 
 class QuestionResponse(BaseModel):
-    id: int
+    question_uuid: int
     question: str
     answer: str
     created_at: datetime
