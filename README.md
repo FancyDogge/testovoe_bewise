@@ -8,7 +8,7 @@
 Для начала нужно клонировать данный репозиторий
 
 ```
-git clone https://github.com/FancyDogge/blog_testovoe.git
+git clone https://github.com/FancyDogge/testovoe_bewise.git
 ```
 
 Далее для запуска перейдите в директорию с docker-compose.yml и введите сдледующую команду для 
